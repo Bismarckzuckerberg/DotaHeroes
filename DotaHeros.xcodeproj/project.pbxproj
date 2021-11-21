@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A610CF9B274A823500FBBAD9 /* dotaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610CF9A274A823500FBBAD9 /* dotaCell.swift */; };
 		A63E420B27492FD00033F4FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E420A27492FD00033F4FF /* AppDelegate.swift */; };
 		A63E420D27492FD00033F4FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E420C27492FD00033F4FF /* SceneDelegate.swift */; };
 		A63E420F27492FD00033F4FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E420E27492FD00033F4FF /* ViewController.swift */; };
 		A63E421227492FD00033F4FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63E421027492FD00033F4FF /* Main.storyboard */; };
 		A63E421427492FD10033F4FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63E421327492FD10033F4FF /* Assets.xcassets */; };
 		A63E421727492FD10033F4FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63E421527492FD10033F4FF /* LaunchScreen.storyboard */; };
+		A63E421F274931440033F4FF /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E421E274931440033F4FF /* HeroViewController.swift */; };
+		A63E42212749320B0033F4FF /* HeroStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E42202749320B0033F4FF /* HeroStats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A610CF9A274A823500FBBAD9 /* dotaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dotaCell.swift; sourceTree = "<group>"; };
 		A63E420727492FD00033F4FF /* DotaHeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotaHeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63E420A27492FD00033F4FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A63E420C27492FD00033F4FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		A63E421327492FD10033F4FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A63E421627492FD10033F4FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A63E421827492FD10033F4FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A63E421E274931440033F4FF /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
+		A63E42202749320B0033F4FF /* HeroStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroStats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A610CF9C274A8DA700FBBAD9 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				A63E420C27492FD00033F4FF /* SceneDelegate.swift */,
+				A63E420A27492FD00033F4FF /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		A610CF9D274A8DBB00FBBAD9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A63E420E27492FD00033F4FF /* ViewController.swift */,
+				A63E421E274931440033F4FF /* HeroViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A610CF9E274A8DDC00FBBAD9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A610CF9A274A823500FBBAD9 /* dotaCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A610CF9F274A8DF400FBBAD9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A63E421527492FD10033F4FF /* LaunchScreen.storyboard */,
+				A63E421027492FD00033F4FF /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A610CFA0274A8E0700FBBAD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A63E42202749320B0033F4FF /* HeroStats.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A63E41FE27492FD00033F4FF = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +105,12 @@
 		A63E420927492FD00033F4FF /* DotaHeros */ = {
 			isa = PBXGroup;
 			children = (
-				A63E420A27492FD00033F4FF /* AppDelegate.swift */,
-				A63E420C27492FD00033F4FF /* SceneDelegate.swift */,
-				A63E420E27492FD00033F4FF /* ViewController.swift */,
-				A63E421027492FD00033F4FF /* Main.storyboard */,
+				A610CFA0274A8E0700FBBAD9 /* Model */,
+				A610CF9F274A8DF400FBBAD9 /* Storyboards */,
+				A610CF9E274A8DDC00FBBAD9 /* Cell */,
+				A610CF9D274A8DBB00FBBAD9 /* ViewControllers */,
+				A610CF9C274A8DA700FBBAD9 /* Delegates */,
 				A63E421327492FD10033F4FF /* Assets.xcassets */,
-				A63E421527492FD10033F4FF /* LaunchScreen.storyboard */,
 				A63E421827492FD10033F4FF /* Info.plist */,
 			);
 			path = DotaHeros;
@@ -138,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63E421F274931440033F4FF /* HeroViewController.swift in Sources */,
 				A63E420F27492FD00033F4FF /* ViewController.swift in Sources */,
 				A63E420B27492FD00033F4FF /* AppDelegate.swift in Sources */,
+				A63E42212749320B0033F4FF /* HeroStats.swift in Sources */,
 				A63E420D27492FD00033F4FF /* SceneDelegate.swift in Sources */,
+				A610CF9B274A823500FBBAD9 /* dotaCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
